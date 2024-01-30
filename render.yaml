@@ -12,3 +12,7 @@ services:
         generateValue: true
       - key: "MSSQL_PID"
         value: 'Developer'
+    disk:
+      name: mssql-data
+      mountPath: /var/opt/mssql
+      sizeGB: 10
