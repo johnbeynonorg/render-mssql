@@ -4,7 +4,7 @@ services:
     plan: standard
     runtime: image
     image: 
-      url: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04 
+      url: mcr.microsoft.com/mssql/server:2017-latest
     envVars:
       - key: "ACCEPT_EULA"
         value: 'y'
