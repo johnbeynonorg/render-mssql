@@ -1,0 +1,14 @@
+services:
+  - type: pserv
+    name: mssql-server
+    plan: standard
+    runtime: image
+    image: 
+      url: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04 
+    envVars:
+      - key: "ACCEPT_EULA"
+        value: 'y'
+      - key: "MSSQL_SA_PASSWORD"
+        generateValue: true
+      - key: "MSSQL_PID"
+        value: 'Developer'
